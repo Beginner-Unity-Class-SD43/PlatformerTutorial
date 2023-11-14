@@ -27,7 +27,6 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Coin"))
         {
-            Debug.Log("Colliding");
             coins += 1;
             audioSource.PlayOneShot(coin);
             Destroy(collision.gameObject);
